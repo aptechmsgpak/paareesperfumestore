@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAAREES STORE</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="parstyle.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&display=swap');
+
+/* top navbar element  */
+.topcolor{color:white; background-color:#AB8E66;}
+.iconc a i:hover{ font-size: 12px; border: 13px solid #a07539; border-radius: 50%; transition: 1s;}
+
+/* main navbar text change  */
+  .navbar-light .navbar-nav .nav-link
+{
+     text-align: center;
+    color: #AB8E66;
+}
+/* navbar hover text color bold etc  */
+.navbar-light .navbar-nav .nav-link:hover
+{
+    text-align: center;
+    color: #AB8E66;
+    transition: 1s;
+    font-size: 16px; font-weight: 300; font-weight: bold
+}
+
+/* right side images hover 2 nos  */
+.rightimg {background-image: url(images/product-item-22.jpg); width: 400px; height: 350px; background-repeat: no-repeat; background-size: cover; background-color: gray;}
+
+.rightimg:hover{background-image: url(images/product-item-21.jpg); width: 400px; height: 350px; background-repeat: no-repeat; background-size: cover; transition: 1.5s;}
+
+.rightimg2 {background-image: url(images/product-item-black-6.jpg); width: 400px; height: 350px; background-repeat: no-repeat; background-size: cover; background-color: gray;}
+
+.rightimg2:hover{background-image: url(images/product-item-black-5.jpg); width: 400px; height: 350px; background-repeat: no-repeat; background-size: cover; transition: 1.5s;}
+/* right side images hover 2 nos ended  */
+
+/* in card transform transition etc  */
+.inner {overflow: hidden;}
+.inner img {transition: all 1.5s ease;}
+.inner:hover img{transform: scale(1.1);}
+.card {background-color: rgba(220, 220, 220, 0.514);}
+
+/* footer a underline color etc  */
+.footc {background-color: rgba(220, 220, 220, 0.514); }
+.footc a{color:black; font-weight: bold;}
+.footc a:hover{color: #AB8E66; font-weight: bold; text-decoration: underline !important;}
+
+/* card border and fa fa star checked  */
+.card:hover{border: solid 1px #AB8E66;}
+.checked {
+  color: orange;
+}
+
+/* card button and modal etc  */
+.btnmdl {margin-left: 73px;}
+.h5mdl {color: orange;}
+
+/* # Featured Services */
+
+.featured-services {
+  padding: 20px 0;
+}
+.featured-services .icon-box {
+  padding: 20px;
+}
+.featured-services .icon-box-bg {
+  background-image: linear-gradient(0deg, #222222 0%, #2f2f2f 50%, #222222 100%);
+}
+.featured-services .icon {
+  margin-bottom: 15px;
+}
+.featured-services .icon i {
+  color: #AB8E66;
+  font-size: 42px;
+}
+.featured-services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.featured-services .title a {
+  color: #222222;
+  transition: 0.3s;
+}
+.featured-services .icon-box:hover .title a {
+  color: #AB8E66;
+}
+.featured-services .description {
+  line-height: 24px;
+  font-size: 14px;
+}
+/* faqs  */
+body {
+  font-family: Sans-serif;
+  font-size: 15px;
+  background:white;
+}
+.fqs{background-color: #eaeaeab2;}
+.content {
+  width: 50%;
+  padding: 0;
+  margin: 0 auto;
+}
+summary {
+  font-size: 1.1rem;
+  font-weight: 300;
+  background-color: (#AB8E66);
+  color: #333;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 0.25rem;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+details > summary::after {
+  position: absolute;
+  content: "+";
+  right: 20px;
+}
+details[open] > summary::after {
+  position: absolute;
+  content: "-";
+  right: 20px;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0; margin-top: -10px}
+  100%  {opacity: 1; margin-top: 0px}
+}
+
+h2 {color: #a07539; font-family: 'Abril Fatface', cursive;}
+</style>
+
+</head>
+<body>
+
+  
+<!-- text eliment on toop  -->
+
+<nav class="navbar fixed-top shadow navbar-ligh topcolor">
+    <div class="container-fluid">
+      <span class="navbar-text ms-5">
+        Welcome to our online store!
+      </span>
+      <span class="navbar-text iconc me-5">
+       <a href="https://twitter.com/?lang=en" target="_blank" style="color: white;"><i class="bi bi-twitter me-3"></i></a> 
+       <a href="https://web.whatsapp.com/" target="_blank" style="color: white;"><i class="bi bi-whatsapp me-3"></i></a>
+       <a href="https://www.facebook.com/messenger/" target="_blank" style="color: white;"><i class="bi bi-messenger me-3"></i></a>
+      </span>
+
+    </div>
+  </nav>
+<br> <br>
+
+
+<!-- logo box  -->
+
+<div class="row">
+  <div class="col-sm-1 mt-5 mb-4 ms-5"> <a href="index.html"><img src="images/LOGO.png" style="margin-left: 10px;" alt=""> </a></div>
+  <div class="col-sm-11">  </div>
+</div>
+<!-- navbar nav  -->
+
+<div class="row">
+  <div class="col-sm-12">
+    <nav class="navbar shadow  navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand topcolor ms-4" href="#"><span style="color: #AB8E66;">iqbal-hussain aptech msg</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link h6 ms-3" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link h6" href="ATTUS.html">ABOUT US</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link h6" href="products.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link h6" href="UPCOMING.html">NEW STOCK</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link h6" href="CONTACTUS.html">CONTACT US</a>
+            </li>
+            <li class="nav-item dropdown ms-3">
+              <a class="nav-link dropdown-toggle h6" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                COLLECTIONS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="men_perfume.html">Men Collection</a></li>
+                <li><a class="dropdown-item" href="ladies_perfume.html">Women Collection</a></li>
+                <li><a class="dropdown-item" href="DAVIDOFF.html">Davidoff items</a></li>
+                <li><a class="dropdown-item" href="DIOR.html">Dior items</a></li>
+                <li><a class="dropdown-item" href="index.html">Paarees Products</a></li>
+               
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- carosel captions off  -->
+
+<div class="row">
+  <div class="col-sm-7 mt-5 ms-5">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/slid1a.jpg" class="d-block w-100" height="700">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slider2a.jpg" class="d-block w-100" height="700">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slider-3x770.jpg" class="d-block w-100" height="700">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p> -->
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+<!-- right side 2 images with inner class  -->
+
+  <div class="col-sm-4 mt-5 ms-5">
+
+  <div class="rightimg"></div>
+     
+  <div class="rightimg2"></div>
+  </div> 
+</div>
+<br><br>
+                            <h2><center><b> DEAL OF THE DAY </b></center></H2>
+  <br>
+<!-- card 4x 1st  -->
+<div class="container-fluid">
+<div class="row">
+  <div class="col">
+    <div class="card inner shadow ms-3" style="width: 18rem;">
+      <img src="images/sl1x650.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: #AB8E66; font-weight: bold; font-family:cursive;"> <center> Belvish Touch </center> </h5>
+        
+        <div class="rating" style="margin-left: 80px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          </div>
+
+          <h6><center> <del style="color: grey;">$ 6.99</del> $ 4.99</center></h6>
+          <br>
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-success btnmdl"data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Buy Now <i class="bi bi-cart4"></i>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title h5mdl" id="exampleModalLabel">Belvish Touch</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+            <img src="images/sl1x650.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="col">
+            <p class="text-black text-center">  Welcome to our supreme product of Belvish touch
+              they have beautifull smell and soft touch. <br>
+             <b> ! Buy 2 belvish ang get 1 free of Floora x ! </b>
+          </p>
+          </div>
+        </div>               
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button onclick="msg()" type="button" class="btn btn-primary">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card inner shadow ms-3" style="width: 18rem;">
+      <img src="images/sl2x650.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: #AB8E66; font-weight: bold; font-family:cursive;"> <center> Paarees Fomy </center> </h5>
+        
+        <div class="rating" style="margin-left: 80px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          </div>
+
+          <h6><center> <del style="color: grey;">$ 12.99</del> $ 9.99</center></h6>
+          <br>
+                      <!-- Button trigger modal -->
+<button type="button" class="btn btn-success btnmdl"data-bs-toggle="modal" data-bs-target="#exampleModa">
+  Buy Now <i class="bi bi-cart4"></i>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModa" tabindex="-1" aria-labelledby="exampleModalLabe" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title h5mdl" id="exampleModalLabe">Paarees Fomy</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col"><img src="images/sl2x650.jpg" class="card-img-top" alt="..."></div>
+          <div class="col"><p class="text-center"> Welcome to our supreme product of Paarees Fomy
+            they have beautifull smell and soft touch. <br>
+           <b> ! Buy Paarees Fomy upto 40% off x ! </b>
+        </p></div>
+        </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button onclick="msg()" type="button" class="btn btn-primary">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card inner shadow ms-2" style="width: 18rem;">
+      <img src="images/sl3x650.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: #AB8E66; font-weight: bold; font-family:cursive;"> <center> Dior Style </center> </h5>
+        
+        <div class="rating" style="margin-left: 80px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          </div>
+
+          <h6><center> <del style="color: grey;">$ 7.99</del> $ 5.99</center></h6>
+          <br>
+                      <!-- Button trigger modal -->
+<button type="button" class="btn btn-success btnmdl"data-bs-toggle="modal" data-bs-target="#exampleMod">
+  Buy Now <i class="bi bi-cart4"></i>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleMod" tabindex="-1" aria-labelledby="exampleModalLab" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title h5mdl" id="exampleModalLab">Dior Style</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+      <div class="col"><img src="images/sl3x650.jpg" class="card-img-top" alt="..."></div>
+      <div class="col"><p class="text-center"> Welcome to our supreme product of Dior style
+        for strong men. <br>
+       <b> ! Buy Dior style for strong personality ! </b>
+    </p></div>
+        </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button onclick="msg()" type="button" class="btn btn-primary">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card inner shadow" style="width: 18rem;">
+      <img src="images/sl4x650.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: #AB8E66; font-weight: bold; font-family:cursive;"> <center> Floora X </center> </h5>
+        
+        <div class="rating" style="margin-left: 80px;">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          </div>
+
+          <h6><center> <del style="color: grey;">$ 9.69</del> $ 8.69</center></h6>
+          <br>
+                      <!-- Button trigger modal -->
+<button type="button" class="btn btn-success btnmdl"data-bs-toggle="modal" data-bs-target="#exampleM">
+  Buy Now <i class="bi bi-cart4"></i>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleM" tabindex="-1" aria-labelledby="exampleModalL" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title h5mdl" id="exampleModalL">Floora X</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col"><img src="images/sl4x650.jpg" class="card-img-top" alt="..."></div>
+          <div class="col"><p  class="text-center"> Welcome to our supreme product of Floora X
+            they have beautifull smell and soft touch. <br>
+           <b> ! Buy your's  dream Floora x ! </b>
+        </p></div>
+        </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button onclick="msg()" type="button" class="btn btn-primary">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+<br> <br>
+
+<!-- card 4x 2nd  -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="card inner shadow ms-3" style="width: 18rem;">
+        <img src="images/product-item-18.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #AB8E66; font-weight: bold; font-family:cursive;"> <center> Broot 4u </center> </h5>
+          
+          <div class="rating" style="margin-left: 80px;">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            </div>
+  
+            <h6><center> <del style="color: grey;">$ 5.99</del> $ 4.99</center></h6>
+            <br>
+            <!-- Button trigger modal -->
+  <button type="button" class="btn btn-success btnmdl"data-bs-toggle="modal" data-bs-target="#exapleModal">
+    Buy Now <i class="bi bi-cart4"></i>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exapleModal" tabindex="-1" aria-labelledby="exapleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h5mdl" id="exapleModalLabel">Broot 4u</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col"><img src="images/product-item-18.jpg" class="card-img-top" alt="..."></div>
+            <div class="col"><p class="text-black text-center"> Welcome to our supreme product of Broot 4u
+              they have beautifull smell and soft touch. <br>
+             <b> ! Buy 2 Broot 4u get 1 free of Floora x ! </b>
+          </p></div>
+          </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button onclick="msg()" type="button" class="btn btn-primary">Confirm Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col">
+      <div class="card inner shadow ms-3" style="width: 18rem;">
+        <img src="images/product-item-6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #AB8E66; font-weight: bold; font-family:cursive;"> <center> Lemon Farm </center> </h5>
+          
+          <div class="rating" style="margin-left: 80px;">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            </div>
+  
+            <h6><center> <del style="color: grey;">$ 12.99</del> $ 9.99</center></h6>
+            <br>
+                        <!-- Button trigger modal -->
+  <button type="button" class="btn btn-success btnmdl"data-bs-toggle="modal" data-bs-target="#xampleModa">
+    Buy Now <i class="bi bi-cart4"></i>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="xampleModa" tabindex="-1" aria-labelledby="xampleModalLabe" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h5mdl" id="xampleModalLabe">Lemon Farm</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col"><img src="images/product-item-6.jpg" class="card-img-top" alt="..."></div>
+            <div class="col"><p class="text-center"> Welcome to our supreme product of Lemon Farm
+              they have beautifull smell and soft touch. <br>
+             <b> ! Buy Lemon Farm upto 40% off  ! </b>
+          </p></div>
+          </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button onclick="msg()" type="button" class="btn btn-primary">Confirm Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col">
+      <div class="card inner shadow ms-2" style="width: 18rem;">
+        <img src="images/product-item-12.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #AB8E66; font-weight: bold; font-family:cursive;"> <center> CK Gold  </center> </h5>
+          
+          <div class="rating" style="margin-left: 80px;">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            </div>
+  
+            <h6><center> <del style="color: grey;">$ 9.99</del> $ 8.55</center></h6>
+            <br>
+                        <!-- Button trigger modal -->
+  <button type="button" class="btn btn-success btnmdl"data-bs-toggle="modal" data-bs-target="#ampleMod">
+    Buy Now <i class="bi bi-cart4"></i>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="ampleMod" tabindex="-1" aria-labelledby="mpleModalLab" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h5mdl" id="mpleModalLab">Dior Style</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col"><img src="images/product-item-12.jpg" class="card-img-top" alt="..."></div>
+            <div class="col"><p class="text-center"> Welcome to our supreme product of CK Gold
+              for strong men. <br>
+             <b> ! Buy CK Gold for strong personality ! </b>
+          </p></div>
+          </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button onclick="msg()" type="button" class="btn btn-primary">Confirm Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col">
+      <div class="card inner shadow" style="width: 18rem;">
+        <img src="images/product-item-9.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #AB8E66; font-weight: bold; font-family:cursive;"> <center> Snow spray </center> </h5>
+          
+          <div class="rating" style="margin-left: 80px;">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            </div>
+  
+            <h6><center> <del style="color: grey;">$ 20.00</del> $ 16.99</center></h6>
+            <br>
+                        <!-- Button trigger modal -->
+  <button type="button" class="btn btn-success btnmdl"data-bs-toggle="modal" data-bs-target="#exameM">
+    Buy Now <i class="bi bi-cart4"></i>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exameM" tabindex="-1" aria-labelledby="exampModalL" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h5mdl" id="exampModalL">Snow spray</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col"><img src="images/product-item-9.jpg" class="card-img-top" alt="..."></div>
+            <div class="col"><p  class="text-center"> Welcome to our supreme product of Snow spray
+              they have beautifull smell and soft touch. <br>
+             <b> ! Buy your's  dream Snow spray ! </b>
+          </p></div>
+          </div>  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button onclick="msg()" type="button" class="btn btn-primary">Confirm Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  </div>
+  <br> <br>
+
+  <!-- banner MEN WOMEN -->
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col"> <a href="men_perfume.html"> <img src="./images/SHOP MEN.jpg" class="img-fluid shadow" alt=""> </a> </div>
+  <div class="col"> <a href="ladies_perfume.html"> <img src="./images/SHOP WOMEN.jpg" class="img-fluid shadow" alt=""> </a> </div>
+  </div>
+  </div>  
+  <br> <br>
+
+<!-- CK AND DIFIDOOF 2 BOXES  -->
+
+<div class="container-fluid">
+<div class="row">
+<div class="col ms-3"> <a href="DAVIDOFF.html" target="_blank"> <img src="./images/111A.jpg" class="img-fluid shadow" width="600" alt=""> </a>  </div>
+<div class="col ms-4"> <a href="DIOR.html"> <img src="./images/111AA.jpg" class="img-fluid shadow" width="600" alt=""> </a> </div>
+</div>  
+</div>
+<br>
+
+<!-- banner arival  -->
+  <br>
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col"> <a href="UPCOMING.html" target="_blank"> <img src="images/banner n arrival.jpg" class="img-fluid shadow" width="100%" alt=""> </a> </div>    
+  </div>
+  </div> 
+
+<!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services section-bg">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-clock"></i></div>
+              <h4 class="title"><a href="osupport.html">ONLINE SUPPORT 24X7</a></h4>
+              <p class="description">24x7 Support for product detail online buy and much more u need paaarees so now connect our support now.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-cart4"></i></div>
+              <h4 class="title"><a href="index.html">STORE VISITE</a></h4>
+              <p class="description">PAAREES store have a many product of displayed on a shelve so now fast to come and get all.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-paypal"></i></div>
+              <h4 class="title"><a href="https://www.paypal.com/pk/home">PAYMENT WITH PAYPAL</a></h4>
+              <p class="description">You need to pay paypaal on online purchases so are store allow to pay with paypal</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section --> 
+    
+    <h2><center><b> OUR BRANDS </b></center></H2>
+  <br> <br>
+<!-- OUR CLIENTS  -->
+<!-- mini slider top  -->
+<div class="container-fluid">
+<div class="row">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col"><img src="davidoff/blvgari_logo.webp" class="d-block w-100"></div>
+          <div class="col"><img src="davidoff/Gucci_Brand_Logo.webp" class="d-block w-100"></div>
+          <div class="col"><img src="davidoff/dolce_gabbana.webp" class="d-block w-100"></div>
+          <div class="col"><img src="davidoff/ralph-lauren.jpg" class="d-block w-100"></div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col"><img src="davidoff/Sprite-Matrix.png" class="d-block w-100"></div>
+          <div class="col"><img src="davidoff/thierry-mugler.jpg" class="d-block w-100"></div>
+          <div class="col"><img src="davidoff/dolce_gabbana.webp" class="d-block w-100"></div>
+          <div class="col"><img src="davidoff/Giorgio_Armani_Brand_Logo.webp" class="d-block w-100"></div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col"><img src="davidoff/blvgari_logo.webp" class="d-block w-100"></div>
+          <div class="col"><img src="davidoff/Gucci_Brand_Logo.webp" class="d-block w-100"></div>
+          <div class="col"><img src="davidoff/dolce_gabbana.webp" class="d-block w-100"></div>
+          <div class="col"><img src="davidoff/ralph-lauren.jpg" class="d-block w-100"></div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+</div>
+<br> <br>
+  
+<!-- upcoming product  -->
+                                    <h2><center><b> UPCOMING PRODUCTS </b></center></H2>
+<br>
+<a href="UPCOMING.html" target="_blank"> <div class="container-fluid">
+  <div class="row">
+    <div class="col ms-3"> 
+      <img src="images/item-instagram-1.jpg" class="img-fluid shadow ms-1" width="250" height="250" alt="">
+      <img src="images/item-instagram-2.jpg" class="img-fluid" width="250" height="250" alt="">
+      <img src="images/item-instagram-3.jpg" class="img-fluid" width="250" height="250" alt="">
+      <img src="images/item-instagram-4.jpg" class="img-fluid" width="250" height="250" alt="">
+      <img src="images/item-instagram-5.jpg" class="img-fluid shadow" width="250" height="250" alt="">
+    </div>
+  </div>
+</div>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col ms-3"> 
+      <img src="images/blog-item-list-1.jpg" class="img-fluid shadow ms-1" width="250" height="250" alt="">
+      <img src="images/blog-item-list-2.jpg" class="img-fluid" width="250" height="250" alt="">
+      <img src="images/blog-item-list-3.jpg" class="img-fluid" width="250" height="250" alt="">
+      <img src="images/blog-item-list-4.jpg" class="img-fluid" width="250" height="250" alt="">
+      <img src="images/blog-item-list-5.jpg" class="img-fluid shadow" width="250" height="250" alt="">
+    </div>
+  </div>
+</div>
+</a>
+<br>
+<!-- FAQS BANNER  -->
+<h2><center><b> FAQS </b></center></H2>
+<div class="row fqs shadow">
+  <div class="col-lg-6"> <img src="./images/BANNERFOOTER.jpg" width="100%" height="300" alt=""> </div>
+  <div class="col-lg-6"><div class="content">
+    <details open>
+    <summary>How to avail our discounts ?</summary>
+    <div class="faq__content">
+      <p>Contine used our web page and sea discounts offer.</p>
+    </div>
+  </details>
+  <details>
+    <summary>How to buy new arrival stock / advance booking?</summary>
+    <div class="faq__content">
+      <p>go to the new stock page and get product code then e-mail.</p>
+    </div>
+  </details>
+  <details>
+    <summary>Product athentict report?</summary>
+    <div class="faq__content">
+      <p>Product 100% original and authentic.</p>
+    </div>
+  </details>
+  </div></div>
+</div>
+<br> <br>
+<!-- footer started  -->
+  
+  <footer>
+  <div class="container-fluide footc " style="padding:60px !important">
+      <br>
+      <div class="row">
+          <div class="col"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.3138506897826!2d67.14963081407905!3d24.88727398404122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339999415e0c3%3A0x36742eee0fd9c291!2sAptech%20Metro%20Star%20Gate!5e0!3m2!1sen!2s!4v1650728645523!5m2!1sen!2s" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  
+          <div class="col"> 
+              <h4 style="color: rgba(168, 138, 38, 0.877); font-family: 'Times New Roman', Times, serif;">QUICK LINKS</h4>
+              <a href="men_perfume.html" target="_blank" style="text-decoration: none;">Men Perfumes</a> <br>
+              <a href="ladies_perfume.html" target="_blank" style="text-decoration: none;">Women Perfumes</a> <br>
+              <a href="UPCOMING.html" target="_blank" style="text-decoration: none;">New arrivals</a> <br>
+              <a href="DIOR.html" target="_blank" style="text-decoration: none;">Dior Perfumes</a> <br>
+              <a href="DAVIDOFF.html" target="_blank" style="text-decoration: none;">Davidoff Perfumes</a> <br>
+              <a href="index.html" target="_blank" style="text-decoration: none;">Paarees Perfume store</a> <br>
+           </div>
+          <div class="col">
+            <a href="#" style="text-decoration: none; color: rgba(168, 138, 38, 0.877); font-family: 'Times New Roman', Times, serif; font-weight: bold; font-size: 20;">Powered by</a> <br> <br>
+             <a href="https://navttc.mne.skillingpakistan.org/" target="_blank"> <img src="images/navttc.png" class="img-fluid" width="75" height="50" alt=""> </a> 
+             <a href="https://aptech-education.com.pk/" target="_blank"> <img src="images/aptech.png" alt=""> </a>
+          </div>
+          <div class="col">
+            <input type="search" placeholder="Thanks Sir Mansoor"> &nbsp; &nbsp; <i class="fa fa-search text-white"></i>
+          <br><br><br>
+          <h5 style="color: rgba(168, 138, 38, 0.877); font-family: 'Times New Roman', Times, serif;">FOLLOW US!</h5>
+          </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">  <h6><center> &COPY; COPYRIGHT 2022 AND DESIGNED BY <span style="color: #a07539;"> IQBAL HUSSAIN</span> for PAAREES PERFUME  STORE </center></h6></div>
+      </div>
+  </div>
+  </footer>
+  <!-- footer eneded  -->
+
+  <!-- java script button msg -->
+  <script>
+    function msg() 
+  {
+     alert('your order confirmed.     thanks for buying our product'); 
+  }
+  </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
